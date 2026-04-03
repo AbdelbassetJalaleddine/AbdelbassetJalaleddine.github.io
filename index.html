@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdelbasset's Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -248,6 +248,23 @@
             </div>
         </section>
 
+        <section class="container" id="game">
+            <div class="main-title">
+                <h2>Mini <span>Game</span><span class="bg-text">Play</span></h2>
+            </div>
+            <p class="port-text">Catch the Androids, avoid the bugs!</p>
+            <div id="gradle-game-container">
+                <div id="ui-overlay">
+                    <span>Build Status: <b id="build-score">0</b></span>
+                    <span>Time: <b id="build-timer">20</b>s</span>
+                </div>
+                
+                <div id="game-field">
+                    <button id="build-btn" onclick="startBuild()">./gradlew assembleDebug</button>
+                </div>
+            </div>
+        </section>
+
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -290,6 +307,7 @@
         <div class="control active-btn" data-id="home"><i class="fas fa-home"></i></div>
         <div class="control" data-id="about"><i class="fas fa-user"></i></div>
         <div class="control" data-id="portfolio"><i class="fas fa-briefcase"></i></div>
+        <div class="control" data-id="game"><i class="fas fa-gamepad"></i></div>
         <div class="control" data-id="contact"><i class="fas fa-envelope-open"></i></div>
     </div>
 
